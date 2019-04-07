@@ -1,0 +1,34 @@
+{
+  "name": "troll-vscode",
+  "displayName": "troll-vscode",
+  "description": "Troll language support for Visual Studio Code",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "troll",
+        "aliases": [
+          "troll",
+          "troll"
+        ],
+        "extensions": [
+          ".tr"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "troll",
+        "scopeName": "source.troll",
+        "path": "./syntaxes/troll.tmLanguage"
+      }
+    ]
+  }
+}
