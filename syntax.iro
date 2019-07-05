@@ -100,13 +100,13 @@ contexts [] {
     }
 
     : pattern {
-      regex          \= $${__IDENTIFIER}
-      styles []       = .identifier;
+      regex          \= (\d?[d|D]?\d+)
+      styles []       = .numeric;
     }
 
     : pattern {
-      regex          \= (\b\d?[d|D]?\d+)
-      styles []       = .numeric;
+      regex          \= $${__IDENTIFIER}
+      styles []       = .identifier;
     }
 
     : pattern {
