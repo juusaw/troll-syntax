@@ -6,6 +6,11 @@ Available in [Visual Studio Marketplace](https://marketplace.visualstudio.com/it
 
 ## Release Notes
 
+### 1.0.1
+
+- Increased priority of dice and numeric symbols
+- Added missing operators and control words
+
 ### 1.0.0
 
-Initial release.
+- Initial release

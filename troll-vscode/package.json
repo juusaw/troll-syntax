@@ -2,7 +2,7 @@
   "name": "troll-vscode",
   "displayName": "troll-vscode",
   "description": "Troll language support for Visual Studio Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "juusaw",
   "repository": {
     "type": "git",
