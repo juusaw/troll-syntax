@@ -5,7 +5,9 @@ __IDENTIFIER \= (\b[a-z][a-z0-9]*)
 
 __RESERVED \= (function|call|compositional)
 
-__CONTROL \= (if|then|else|foreach|while|do|until)
+__CONTROL \= (if|then|else|foreach|while|do|until|in)
+
+__OPERATOR \= (\=|\*|\+|\-|:=|<|>|<=|>=)
 
 styles [] {
 
@@ -93,7 +95,7 @@ contexts [] {
 
 
     : pattern {
-      regex          \= (\=|\*|\+|\-|:=)
+      regex          \= $${__OPERATOR}
       styles []       = .operator;
     }
 
