@@ -4,13 +4,13 @@
 <!-- Generated via Iro -->
 <dict>
   <key>fileTypes</key>
-  <array> 
+  <array>
     <string>tr</string>
    </array>
   <key>name</key>
   <string>troll</string>
   <key>patterns</key>
-  <array> 
+  <array>
     <dict>
       <key>include</key>
       <string>#main</string>
@@ -25,7 +25,7 @@
     <key>main</key>
     <dict>
       <key>patterns</key>
-      <array> 
+      <array>
         <dict>
           <key>match</key>
           <string>(function|call|compositional)</string>
@@ -34,27 +34,27 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>(if|then|else|foreach|while|do|until)</string>
+          <string>(if|then|else|foreach|while|do|until|in)</string>
           <key>name</key>
           <string>keyword.control.troll</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(\=|\*|\+|\-|:=)</string>
+          <string>(\=|\*|\+|\-|:=|&lt;|&gt;|&lt;=|&gt;=)</string>
           <key>name</key>
           <string>keyword.operator.troll</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>(\d?[d\x{007c}D]?\d+)</string>
+          <key>name</key>
+          <string>constant.numeric.troll</string>
         </dict>
         <dict>
           <key>match</key>
           <string>(\b[a-z][a-z0-9]*)</string>
           <key>name</key>
           <string>variable.other.troll</string>
-        </dict>
-        <dict>
-          <key>match</key>
-          <string>(\b\d?[d\x{007c}D]?\d+)</string>
-          <key>name</key>
-          <string>constant.numeric.troll</string>
         </dict>
         <dict>
           <key>match</key>
@@ -103,7 +103,7 @@
     <key>main__1</key>
     <dict>
       <key>patterns</key>
-      <array> 
+      <array>
        </array>
     </dict>
   </dict>
